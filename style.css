@@ -1,0 +1,32 @@
+body, #grand {
+  margin: 0px;
+  overflow: hidden;
+}
+
+h1, h3 {
+  margin: 0px 0px 10px 0px;
+}
+
+#grand {
+  padding: 20px;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.dim-1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.test-style-1 {
+  color: white;
+  text-shadow: 1px 2px 4ps black;
+}

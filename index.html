@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quote of the Day!</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="jquery.js"></script>
+    <script src="angular.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body ng-app="myApp" ng-controller="masterCtrl">
+    <div class="test-style-1" id="grand" style="background-image: url({{ quote.background }});">
+      <div class="dim-1"></div>
+      <div>
+        <h1><strong><a title="{{ quote.title }}" href="{{ quote.permalink }}">{{ quote.title }}</a></strong></h1>
+        <h3>{{ quote.quote }}</h3>
+        <br/>
+        <p>by: <strong><em>{{ quote.author }}</em></strong></p>
+        <p>{{ quote.category }}</p>
+        <p>{{ quote.date }}</p>
+        <ul>
+          <li ng-repeat="tag in quote.tags">{{ tag }}</li>
+        </ul>
+        <br/>
+        <br/>
+        <p>{{ contents.copyright }}</p>
+      </div>
+    </div>
+  </body>
+</html>
