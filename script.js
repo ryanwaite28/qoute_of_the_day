@@ -4,7 +4,7 @@ var App = angular.module("myApp", []);
 App.controller("masterCtrl", ["$scope", function($scope){
   $(document).ready(function(){
 
-    $.getJSON("http://quotes.rest/qod.json", (resp) => {
+    $.getJSON("https://quotes.rest/qod.json", (resp) => {
       console.log(resp);
       $scope.contents = resp
       $scope.quote = resp.contents.quotes[0]
